@@ -1,11 +1,12 @@
-import com.google.j2objc.annotations.Weak;
+package levelone;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest{
+public class LoginTest extends BaseTest {
     @AfterMethod
     public void methodPostCondition() {
         driver.findElement(
@@ -45,14 +46,14 @@ public class LoginTest extends BaseTest{
         String actualRes = signOutBtn.getText().trim();
         System.out.println(actualRes);
 
-//        Assert.assertEquals(
-//                driver.findElement(
-//                                By.xpath("//div[contains(@class,'navbar-logged')]//button"))
-//                        .getText().trim(),
-//                "Sign Out");
+        Assert.assertEquals(
+                driver.findElement(
+                                By.xpath("//div[contains(@class,'navbar-logged')]//button"))
+                        .getText().trim(),
+                "Sign Out");
 
 
         //6.  text: Sign Out
-       Assert.assertEquals(actualRes,"Sign Out");
+     //  Assert.assertEquals(actualRes,"Sign Out");
     }
 }
