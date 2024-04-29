@@ -52,7 +52,6 @@ public class ContactHelper extends BaseHelper{
     public void fillDescriptionAddContact(String description) {
         typeText(description, By.xpath("//input[@placeholder='description']"));
     }
-
     public void clickAddContact() {
         driver.findElement(By.xpath("//div[contains(@class,'add_form')]//button")).click();
     }

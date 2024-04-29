@@ -46,11 +46,9 @@ public class ContactDTO {
         this.email = email;
         return this;
     }
-
     public String getAddress() {
         return address;
     }
-
     public ContactDTO setAddress(String address) {
         this.address = address;
         return this;

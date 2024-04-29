@@ -72,7 +72,6 @@ public class BaseHelper {
         Alert alert = driver.switchTo().alert();
         alert.accept();
     }
-
     // ------------
     public void pause(int time) {
         try {
@@ -81,7 +80,6 @@ public class BaseHelper {
             throw new RuntimeException(e);
         }
     }
-
     public String takeScreenshot() {
         logger.info("start screenshot");
         File tmp = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

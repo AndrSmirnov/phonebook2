@@ -12,11 +12,11 @@ public class UserDTO {
         return email;
     }
 
-    public UserDTO setEmail(String email) { // withEmail(String email)
+    public UserDTO setEmail(String email)
+    { // withEmail(String email)
         this.email = email;
         return this;
     }
-
     public String getPassword() {
         return password;
     }

@@ -52,7 +52,8 @@ public class ApplicationManager {
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver(firefoxOptions);
-        } else if (browser.equals("edge")) {
+        } else if (browser.equals("edge"))
+        {
             //driver  = new EdgeDriver();
             EdgeOptions edgeOptions = new EdgeOptions();
             WebDriverManager.edgedriver().setup();
@@ -73,7 +74,6 @@ public class ApplicationManager {
         homePageHelper = new HomePageHelper(driver);
         userHelper = new UserHelper(driver);
     }
-
     public void quit() {
         driver.quit();
     }
