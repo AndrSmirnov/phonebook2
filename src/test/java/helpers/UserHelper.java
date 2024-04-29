@@ -1,5 +1,4 @@
 package helpers;
-
 import dto.UserDTO;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,15 +10,14 @@ public class UserHelper extends BaseHelper{
     }
 
     By btnSignOut = By.xpath("//div[contains(@class,'navbar-logged')]//button");
+    By btnLogout = By.xpath("//div[contains(@class,'navbar-logged')]//button");
 
     public String getSignOutBtnText() {
         return getTextBaseByLocator(btnSignOut);
     }
 
     public void clickLogoutBtn() {
-        driver.findElement(
-                        By.xpath("//div[contains(@class,'navbar-logged')]//button"))
-                .click();
+        clickBase(btnLogout);
     }
 
     public void clickLoginOnNavBar() {

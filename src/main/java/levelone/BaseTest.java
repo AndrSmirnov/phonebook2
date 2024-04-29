@@ -1,5 +1,4 @@
 package levelone;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,7 +9,8 @@ import org.testng.annotations.BeforeSuite;
 import java.time.Duration;
 
 public class BaseTest {
-   static WebDriver driver;
+
+    static WebDriver driver;
 
     @BeforeSuite
     public static void init() {
@@ -23,11 +23,10 @@ public class BaseTest {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
         driver.navigate().to("https://telranedu.web.app/home");
-
     }
 
     @AfterSuite
-    public static void  tearDown(){
+    public static void tearDown() {
         driver.quit();
     }
 }
