@@ -20,7 +20,8 @@ public class AddContactTests extends BaseTest {
                 .xpath("//input[@name='email']"));
         inputEmail.click();
         inputEmail.clear();
-        inputEmail.sendKeys("testqa20@gmail.com");
+       // inputEmail.sendKeys("testqa20@gmail.com");
+       // inputEmail.sendKeys("testqa20@gmail.com");
         // fill password by: //input[@name='password']
         WebElement inputPassword = driver.findElement(By
                 .xpath("//input[@name='password']"));

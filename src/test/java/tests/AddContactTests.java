@@ -33,11 +33,11 @@ public class AddContactTests extends BaseTest{
         app.getContactHelper().clickAddOnNavBar();
         ContactDTO contactDTO = new ContactDTO()
                 .setName(name)
-                .setLastName("jhsbfh")
+                .setLastName("jh")
                 .setPhone(phone)
-                .setEmail("sjkfhj@mail.com")
-                .setAddress("hjsbfhb")
-                .setDescription("bhjfdb");
+                .setEmail("sjkj@mail.com")
+                .setAddress("hfhb")
+                .setDescription("bfdb");
         app.getContactHelper().addContact(contactDTO);
 
         app.getContactHelper().pause(3000);

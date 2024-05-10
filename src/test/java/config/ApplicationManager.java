@@ -75,6 +75,7 @@ public class ApplicationManager {
         userHelper = new UserHelper(driver);
     }
     public void quit() {
+
         driver.quit();
     }
 

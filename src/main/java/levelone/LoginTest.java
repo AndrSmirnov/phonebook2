@@ -24,13 +24,15 @@ public class LoginTest extends BaseTest {
                 .xpath("//input[@name='email']"));
         inputEmail.click();
         inputEmail.clear();
-        inputEmail.sendKeys("testqa20@gmail.com");
+        //inputEmail.sendKeys("testqa20@gmail.com");
+        inputEmail.sendKeys("asmirnoff.74@mail.ru");
         // fill password by: //input[@name='password']
         WebElement inputPassword = driver.findElement(By
                 .xpath("//input[@name='password']"));
         inputPassword.click();
         inputPassword.clear();
-        inputPassword.sendKeys("123456Aa$");
+       // inputPassword.sendKeys("123456Aa$");
+        inputPassword.sendKeys("Qwerty12$");
         // click login btn by: //button[@name='login']
         driver.findElement(By.xpath("//button[@name='login']")).click();
 

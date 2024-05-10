@@ -12,9 +12,10 @@ public class DataProviders {
     @DataProvider
     public Iterator<Object[]> addNewContact() {
         List<Object[]> list = new ArrayList<>();
-        list.add(new Object[]{"Julia", "Smith", "1234567890", "some@mail.com", "Tel Aviv", "friend"});
-        list.add(new Object[]{"Julia1", "Smith", "1234567891", "some@mail.com", "Tel Aviv", "friend"});
-        list.add(new Object[]{"Julia2", "Smith", "1234567892", "some@mail.com", "Tel Aviv", "friend"});
+        list.add(new Object[]{"Julia", "Smith", "1234567890", "some@mail.com", "Boston", "friend"});
+        list.add(new Object[]{"Julia1", "Smith", "1234567891", "some@mail.com", "Boston", "friend"});
+        list.add(new Object[]{"Julia2", "Smith", "1234567892", "some@mail.com", "Boston", "friend"});
+
         return list.iterator();
     }
 
